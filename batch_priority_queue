@@ -1,0 +1,2 @@
+# When enqueuing task
+generate_playlist.apply_async(args=[...], priority=10)  # 0=highest, 9=lowest
