@@ -1,0 +1,50 @@
+from fastapi import FastAPI
+
+from auth_signup import router as auth_signup_router
+from auth_login import router as auth_login_router
+from user_profile import router as user_profile_router
+from password_reset import router as password_reset_router
+from subscription_management import router as subscription_router
+
+from batch_uploader import router as batch_uploader_router
+from metadata_editor import router as metadata_editor_router
+from library_search import router as library_search_router
+from template_manager import router as template_manager_router
+from batch_generator import router as batch_generator_router
+from playlist_previewer import router as playlist_previewer_router
+from playlist_sharing import router as playlist_sharing_router
+from playlist_permissions import router as playlist_permissions_router
+from playlist_exporter import router as playlist_exporter_router
+from batch_status_tracker import router as batch_status_router
+from batch_controller import router as batch_controller_router
+from batch_retry_handler import router as batch_retry_router
+from library_stats import router as library_stats_router
+from playlist_popularity import router as playlist_popularity_router
+from mobile_playlist_creator import router as mobile_playlist_creator_router
+from offline_sync import router as offline_sync_router
+from mood_playlist_generator import router as mood_playlist_router
+
+app = FastAPI()
+
+app.include_router(auth_signup_router)
+app.include_router(auth_login_router)
+app.include_router(user_profile_router)
+app.include_router(password_reset_router)
+app.include_router(subscription_router)
+app.include_router(batch_uploader_router)
+app.include_router(metadata_editor_router)
+app.include_router(library_search_router)
+app.include_router(template_manager_router)
+app.include_router(batch_generator_router)
+app.include_router(playlist_previewer_router)
+app.include_router(playlist_sharing_router)
+app.include_router(playlist_permissions_router)
+app.include_router(playlist_exporter_router)
+app.include_router(batch_status_router)
+app.include_router(batch_controller_router)
+app.include_router(batch_retry_router)
+app.include_router(library_stats_router)
+app.include_router(playlist_popularity_router)
+app.include_router(mobile_playlist_creator_router)
+app.include_router(offline_sync_router)
+app.include_router(mood_playlist_router)
