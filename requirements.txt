@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+tortoise-orm
+python-multipart
+celery
+redis
+mutagen
+qrcode
+argon2-cffi
+python-jose[cryptography]
+# plus whatever else you actually use
